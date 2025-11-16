@@ -1,0 +1,14 @@
+:root {
+  --primary: #8093f1;
+  --primary: #219ebc;
+  --bg: #023047;
+  --text: #ffffff;
+  --text-light: #aaaaaa;
+  --ff: "Stack Sans Text";
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff);
+}
