@@ -18,27 +18,20 @@
 
       <section>
         <span id="textType">
-          <a href="#" value="words" class="active a">Words</a>
-          <a href="#" value="sentences" class="a">Sentences</a>
-          <a href="#" value="paragraphs" class="a">Paragraphs</a>
+          <a href="" value="words" data-type="words" class="active a">Words</a>
+          <a href="" value="sentences" data-type="sentences" class="a">Sentences</a>
+          <a href="" value="paragraphs" data-type="paragraphs" class="a">Paragraphs</a>
         </span>
         <div class="output-section">
           <h2>Generated Text</h2>
-          <button id="cb" class="btn-copy">
-            <img src="public/copy.svg" alt="" />
-          </button>
-          <span id="output" class="output"
-            >Generated text will appear here...</span
-          >
+          <div class="output">
+            <button id="copy" class="btn-copy">
+              <img src="public/copy.svg" alt="" />
+            </button>
+            <span id="output"
+              >Generated text will appear here...</span>
+          </div>
         </div>
-
-        <!-- <div class="output">
-          <h2>Generated Text</h2>
-          <button id="copyBtn" class="btn-copy">
-            <img src="/public/copy.svg" alt="" />
-          </button>
-          <span id="result" class="output-text"></span>
-        </div> -->
 
         <div class="group">
           <span class="">
@@ -52,7 +45,7 @@
               value="5"
             />
           </span>
-          <button type="submit" class="btn-generate">
+          <button type="submit" id="send" class="btn-generate">
             <img src="/public/send.svg" alt="" />
           </button>
         </div>
