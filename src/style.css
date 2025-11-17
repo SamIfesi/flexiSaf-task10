@@ -9,7 +9,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--ff);
-  -webkit-tap-highlight-color: none;
 }
 body {
   background-color: var(--bg);
@@ -17,7 +16,7 @@ body {
   min-height: 100vh;
   place-content: center;
   place-items: center;
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem;
 }
 header {
   text-align: center;
@@ -53,7 +52,7 @@ section {
   color: #ffffff;
   font-weight: 600;
   background: var(--primary);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .group {
   display: flex;
@@ -114,6 +113,10 @@ section {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 6px;
   width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   position: relative;
 }
 .output span {
@@ -122,6 +125,19 @@ section {
   color: var(--text-light);
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+.tribute {
+  position: fixed;
+  bottom: 2rem;
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+.tribute a {
+  color: var(--text-light);
+}
+.tribute:hover  a{
+  color: var(--primary);
+  text-decoration: none;
 }
 @media (min-width: 600px) {
   body {
